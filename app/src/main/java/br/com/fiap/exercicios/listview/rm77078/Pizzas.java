@@ -7,67 +7,47 @@ import java.io.Serializable;
  */
 
 public class Pizzas implements Serializable{
-    private String nomePizza;
-    private String descPizza;
-    private int imgPizza;
-    private String valorPizza;
-    private int pontuacaoPizza;
-    private String ingredientesPizza;
+    private String nome;
+    private String descricao;
+    private int imagem;
+    private String valor;
 
-    public Pizzas(String nomePizza, String descPizza, int imgPizza, String valorPizza, int pontuacaoPizza, String ingredientesPizza) {
-        this.nomePizza = nomePizza;
-        this.descPizza = descPizza;
-        this.imgPizza = imgPizza;
-        this.valorPizza = valorPizza;
-        this.pontuacaoPizza = pontuacaoPizza;
-        this.ingredientesPizza = ingredientesPizza;
+    public Pizzas(String nome, String descricao, int imagem, String valor) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.imagem = imagem;
+        this.valor = valor;
     }
 
-    public String getNomePizza() {
-        return nomePizza;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomePizza(String nomePizza) {
-        this.nomePizza = nomePizza;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public String getDescPizza() {
-        return descPizza;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescPizza(String descPizza) {
-        this.descPizza = descPizza;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public int getImgPizza() {
-        return imgPizza;
+    public int getImagem() {
+        return imagem;
     }
 
-    public void setImgPizza(int imgPizza) {
-        this.imgPizza = imgPizza;
+    public void setImagem(int imagem) {
+        this.imagem = imagem;
     }
 
-    public String getValorPizza() {
-        return valorPizza;
+    public String getValor() {
+        return valor;
     }
 
-    public void setValorPizza(String valorPizza) {
-        this.valorPizza = valorPizza;
-    }
-
-    public int getPontuacaoPizza() {
-        return pontuacaoPizza;
-    }
-
-    public void setPontuacaoPizza(int pontuacaoPizza) {
-        this.pontuacaoPizza = pontuacaoPizza;
-    }
-
-    public String getIngredientesPizza() {
-        return ingredientesPizza;
-    }
-
-    public void setIngredientesPizza(String ingredientesPizza) {
-        this.ingredientesPizza = ingredientesPizza;
+    public void setValor(String valor) {
+        this.valor = valor;
     }
 }
