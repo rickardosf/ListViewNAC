@@ -25,16 +25,19 @@ public class PizzasAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+
         return this.pizzas.size();
     }
 
     @Override
     public Object getItem(int position) {
+
         return (Object)this.pizzas.get(position);
     }
 
     @Override
     public long getItemId(int position) {
+
         return position;
     }
     @Override
@@ -46,12 +49,10 @@ public class PizzasAdapter extends BaseAdapter {
         View v = layoutInflater.inflate(R.layout.listview_pizzas, null);
         ImageView imgPizza = (ImageView)v.findViewById(R.id.imgPizza);
         TextView txtNomePizza = (TextView)v.findViewById(R.id.txtNomePizza);
-        TextView txtDescPizza = (TextView)v.findViewById(R.id.txtDescPizza);
         TextView txtValorPizza = (TextView)v.findViewById(R.id.txtValorPizza);
 
         imgPizza.setImageResource(pizzas.getImgPizza());
         txtNomePizza.setText(pizzas.getNomePizza());
-        txtDescPizza.setText(pizzas.getNomePizza());
         txtValorPizza.setText(pizzas.getValorPizza());
 
         return v;

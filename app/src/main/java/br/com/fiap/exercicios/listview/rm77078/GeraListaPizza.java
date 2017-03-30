@@ -11,12 +11,12 @@ public class GeraListaPizza {
     public static List<Pizzas> geraPizzas(){
         List<Pizzas> pizzas = new ArrayList<>();
 
-        Pizzas pizzas1 = new Pizzas("Pizza de Mussarela","descrição",R.drawable.pizza,"R$20,00");
-        Pizzas pizzas2 = new Pizzas("Pizza de Calabresa","descrição",R.drawable.pizza,"R$20,00");
-        Pizzas pizzas3 = new Pizzas("Pizza de Frango","descrição",R.drawable.pizza,"R$20,00");
-        Pizzas pizzas4 = new Pizzas("Pizza de Milho","descrição",R.drawable.pizza,"R$20,00");
-        Pizzas pizzas5 = new Pizzas("Pizza de Bacon","descrição",R.drawable.pizza,"R$20,00");
-        Pizzas pizzas6 = new Pizzas("Pizza de portuguesa","descrição",R.drawable.pizza,"R$20,00");
+        Pizzas pizzas1 = new Pizzas("Pizza de Mussarela","descrição",R.drawable.pizza,"R$20,00",9,"Ingredientes");
+        Pizzas pizzas2 = new Pizzas("Pizza de Calabresa","descrição",R.drawable.pizza,"R$20,00",9,"Ingredientes");
+        Pizzas pizzas3 = new Pizzas("Pizza de Frango","descrição",R.drawable.pizza,"R$20,00",9,"Ingredientes");
+        Pizzas pizzas4 = new Pizzas("Pizza de Milho","descrição",R.drawable.pizza,"R$20,00",9,"Ingredientes");
+        Pizzas pizzas5 = new Pizzas("Pizza de Bacon","descrição",R.drawable.pizza,"R$20,00",9,"Ingredientes");
+        Pizzas pizzas6 = new Pizzas("Pizza de portuguesa","descrição",R.drawable.pizza,"R$20,00",9,"Ingredientes");
 
         pizzas.add(pizzas1);
         pizzas.add(pizzas2);

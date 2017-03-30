@@ -13,14 +13,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtNomePizza" />
+        android:id="@+id/txtNomePizza"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/imgPizza"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtDescPizza" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtValorPizza" />
+        android:id="@+id/txtValorPizza"
+        android:layout_toRightOf="@id/imgPizza"
+        android:layout_alignBottom="@id/imgPizza"/>
     
 </RelativeLayout>

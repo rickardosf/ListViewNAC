@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Pizzaria</string>
+    <string name="app_name">PizzApp</string>
+    <string name="pizza_app">PizzAPP</string>
+    <string name="welcome">Welcome</string>
 </resources>
