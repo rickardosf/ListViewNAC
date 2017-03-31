@@ -22,7 +22,7 @@ public class GeraListaPizza {
                 R.drawable.mussarela,
                 "R$ 22,50",
                 "CUIDADO !!! A pizza pode conter produtos alergicos.",
-                "RANK DA PIZZA: 9"));
+                "NOTA DA PIZZA: 9"));
 
         pizzas.add(new Pizzas("PizzApp de Calabresa",
                 "Ingredientes " +
@@ -37,7 +37,7 @@ public class GeraListaPizza {
                 R.drawable.calabresa,
                 "R$ 21,50",
                 "CUIDADO !!! A pizza pode conter produtos alergicos.",
-                "RANK DA PIZZA: 9"));
+                "NOTA DA PIZZA: 9"));
 
         pizzas.add(new Pizzas("PizzApp de Frango Catupiry",
                 "Ingredientes \n " +
@@ -52,7 +52,7 @@ public class GeraListaPizza {
                 R.drawable.catupiry,
                 "R$ 42,50",
                 "CUIDADO !!! A pizza pode conter produtos alergicos.",
-                "RANK DA PIZZA: 9"));
+                "NOTA DA PIZZA: 9"));
 
         pizzas.add(new Pizzas("PizzApp Portuguesa",
                 "Ingredientes \n" +
@@ -87,7 +87,8 @@ public class GeraListaPizza {
                 "Orégano a gosto",
                 R.drawable.milho,
                 "R$ 25,50",
-                "CUIDADO !!! A pizza pode conter produtos alergicos.", "RANK DA PIZZA: 9"));
+                "CUIDADO !!! A pizza pode conter produtos alergicos.",
+                "NOTA DA PIZZA: 9"));
 
         pizzas.add(new Pizzas("PizzApp de Bacon",
                 "Ingredientes \n" +
@@ -106,7 +107,7 @@ public class GeraListaPizza {
                 R.drawable.bacon,
                 "R$ 35,50",
                 "CUIDADO !!! A pizza pode conter produtos alergicos.",
-                "RANK DA PIZZA: 9"));
+                "NOTA DA PIZZA: 9"));
 
         return pizzas;
     }

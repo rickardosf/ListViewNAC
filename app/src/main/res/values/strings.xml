@@ -2,4 +2,6 @@
     <string name="app_name">PizzApp</string>
     <string name="pizza_app">PizzAPP</string>
     <string name="welcome">Welcome</string>
+    <string name="splashcreen">titulo_pref</string>
+    <string name="segundos_da_splashscreen">tituli_seg_pref</string>
 </resources>

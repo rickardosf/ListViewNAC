@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Splashcreen"
+        android:text="@string/splashcreen"
         android:textSize="30sp"
         android:textColor="#000"
         android:textAlignment="center"
@@ -23,26 +23,19 @@
         android:layout_gravity="center">
 
         <RadioButton
-            android:id="@+id/chkAtivar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:checked="true"
-            android:text="Ativar Splashscreen" />
-
-        <RadioButton
             android:id="@+id/chkDesativar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:text="Desativar Splashscreen" />
+            android:text="Desativar Splashscreen"
+            android:layout_marginBottom="20dp"/>
+
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Segundos da SplashScreen"
+        android:text="@string/segundos_da_splashscreen"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textColor="#000"
