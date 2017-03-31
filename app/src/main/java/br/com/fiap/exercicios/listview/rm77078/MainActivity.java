@@ -3,6 +3,8 @@ package br.com.fiap.exercicios.listview.rm77078;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -34,8 +36,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //INFLA O MENU COM ITENS DO XML
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
-
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //VERIFICA QUAL ITEM FOI CLICADO NA ACTIONBAR E REALIZA UMA AÇÃO
+        if(item.getItemId() == R.id.mnPreferencias){
+            Intent it = new Intent(this, Preferencias.class);
+            startActivity(it);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
