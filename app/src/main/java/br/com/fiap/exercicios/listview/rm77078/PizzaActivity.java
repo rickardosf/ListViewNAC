@@ -12,7 +12,8 @@ public class PizzaActivity extends AppCompatActivity {
     ImageView imgPizza;
     TextView txtNome;
     TextView txtDescricao;
-    //TextView txtPontuacao;
+    TextView txtAlimentosAlergicos;
+    TextView txtPontuacao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,17 +30,18 @@ public class PizzaActivity extends AppCompatActivity {
         imgPizza = (ImageView)findViewById(R.id.imgPizza);
         txtNome = (TextView)findViewById(R.id.txtNomePizza);
         txtDescricao = (TextView)findViewById(R.id.txtDescricao);
-        //txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
+        txtAlimentosAlergicos = (TextView)findViewById(R.id.txtAlimenstosAlergicos);
+        txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
 
         imgPizza.setImageResource(pizza.getImagem());
         txtNome.setText(pizza.getNome());
         txtDescricao.setText(pizza.getDescricao());
-        //txtPontuacao.setText(pizza.getPontuacao());
+        txtAlimentosAlergicos.setText(pizza.getAlimentosAlergicos());
+        txtPontuacao.setText(pizza.getPontuacao());
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        //Verifica se foi o botao de voltar da actionbar
         if(item.getItemId() == android.R.id.home){
             finish();
         }

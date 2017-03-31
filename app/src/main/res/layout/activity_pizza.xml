@@ -28,7 +28,7 @@
         tools:text="Nome da Pizza"
         android:id="@+id/txtNomePizza"
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp"/>
+        android:textSize="30sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,5 +54,13 @@
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredientes Alergicos"
+        android:id="@+id/txtAlimenstosAlergicos"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+
 </LinearLayout>
-    </ScrollView>
+</ScrollView>
