@@ -5,7 +5,8 @@ import android.support.v7.app.ActionBar;
         import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
-        import android.widget.TextView;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PizzaActivity extends AppCompatActivity {
@@ -13,7 +14,7 @@ public class PizzaActivity extends AppCompatActivity {
     TextView txtNome;
     TextView txtDescricao;
     TextView txtAlimentosAlergicos;
-    TextView txtPontuacao;
+    RatingBar ratingbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +32,14 @@ public class PizzaActivity extends AppCompatActivity {
         txtNome = (TextView)findViewById(R.id.txtNomePizza);
         txtDescricao = (TextView)findViewById(R.id.txtDescricao);
         txtAlimentosAlergicos = (TextView)findViewById(R.id.txtAlimenstosAlergicos);
-        txtPontuacao = (TextView)findViewById(R.id.txtPontuacao);
+        ratingbar = (RatingBar)findViewById(R.id.rtbPontuacao);
+
 
         imgPizza.setImageResource(pizza.getImagem());
         txtNome.setText(pizza.getNome());
         txtDescricao.setText(pizza.getDescricao());
         txtAlimentosAlergicos.setText(pizza.getAlimentosAlergicos());
-        txtPontuacao.setText(pizza.getPontuacao());
+        ratingbar.setRating(pizza.getPontuacao());
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

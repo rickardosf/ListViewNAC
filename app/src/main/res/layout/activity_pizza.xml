@@ -62,5 +62,14 @@
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"/>
 
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtbPontuacao"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:paddingBottom="20dp"/>
+
 </LinearLayout>
 </ScrollView>
