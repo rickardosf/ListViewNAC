@@ -11,12 +11,14 @@ public class Pizzas implements Serializable{
     private String descricao;
     private int imagem;
     private String valor;
+    private String pontuacao;
 
-    public Pizzas(String nome, String descricao, int imagem, String valor) {
+    public Pizzas(String nome, String descricao, int imagem, String valor, String pontuacao) {
         this.nome = nome;
         this.descricao = descricao;
         this.imagem = imagem;
         this.valor = valor;
+        this.pontuacao = pontuacao;
     }
 
     public String getNome() {
@@ -49,5 +51,13 @@ public class Pizzas implements Serializable{
 
     public void setValor(String valor) {
         this.valor = valor;
+    }
+
+    public String getPontuacao() {
+        return pontuacao;
+    }
+
+    public void setPontuacao(String pontuacao) {
+        this.pontuacao = pontuacao;
     }
 }

@@ -50,10 +50,12 @@ public class PizzasAdapter extends BaseAdapter {
         ImageView imgPizza = (ImageView)v.findViewById(R.id.imgPizza);
         TextView txtNomePizza = (TextView)v.findViewById(R.id.txtNomePizza);
         TextView txtValorPizza = (TextView)v.findViewById(R.id.txtValorPizza);
+        //TextView txtPontuacao = (TextView)v.findViewById(R.id.txtPontuacao);
 
         imgPizza.setImageResource(pizzas.getImagem());
         txtNomePizza.setText(pizzas.getNome());
         txtValorPizza.setText(pizzas.getValor());
+        //txtPontuacao.setText(pizzas.getPontuacao());
 
         return v;
     }
