@@ -1,26 +1,42 @@
 package br.com.fiap.exercicios.listview.rm77078;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splashscreen);
+        SharedPreferences sp;
 
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent it = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(it);
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_splashscreen);
 
-                finish();
+            sp = getSharedPreferences("Preferencias", MODE_PRIVATE);
+
+            int splashTime = sp.getInt("splashTime", 3000);
+            boolean disable = sp.getBoolean("desativarSplash", false);
+
+            if( !disable ) {
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadMainActivity();
+                    }
+                }, splashTime);
+            } else {
+                loadMainActivity();
             }
-        }, 3000);
+        }
+
+    public void loadMainActivity() {
+        Intent it = new Intent(SplashScreen.this, MainActivity.class);
+        startActivity(it);
+
+        finish();
     }
 }

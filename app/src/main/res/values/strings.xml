@@ -4,4 +4,8 @@
     <string name="welcome">Welcome</string>
     <string name="splashcreen">titulo_pref</string>
     <string name="segundos_da_splashscreen">tituli_seg_pref</string>
+    <string name="desativar_splashscreen">Desativar SplashScreen</string>
+    <string name="tempo_da_splashscreen">Tempo da SplashScreen</string>
+    <string name="salvar_preferencias">Salvar Preferencias</string>
+    <string name="help_preferencias">Help Preferencias</string>
 </resources>
